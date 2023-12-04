@@ -7,63 +7,76 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
 
 <body>
-    <div class="container hero" style="width: 100%; display: flex; justify-content: space-between; margin-top: 150px;">
-        <div class="col-6" style="width: 500px; height: 600px; overflow: hidden; display: flex; flex-direction: column;">
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-12" style="display: flex; align-items: center; justify-content: space-between;">
+                <h1>Your Website</h1>
+                <form class="search-bar" role="search">
+                    <input type="search" placeholder="Search" aria-label="Search">
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </header>
+
+    <div class="row offset-1">
+        <div class="col-6" style="width: 500px; height: 600px;">
             <h1 class="hero-title">Welcome to Cooknook</h1>
             <p class="hero-descrip">Your new favorite website for finding something new to eat!</p>
         </div>
-    
-        <div class="col-6" style="width: 800px; height: 600px; overflow: hidden; display: flex; flex-direction: column;">
+
+        <div class="col-6" style="width: 800px; height: 600px; overflow: hidden;">
             <div id="carouselExample" class="carousel slide" style="width: 100%; height: 100%;">
-            <div class="carousel-inner " style="width: 100%; height: 100%;">
-                <div class="carousel-item active" style="width: 100%; height: 100%;">
-                    <img src="./assets/images/snowshmock.jpg" class="d-block w-100 " alt="..."
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                <div class="carousel-inner " style="width: 100%; height: 100%;">
+                    <div class="carousel-item active" style="width: 100%; height: 100%;">
+                        <img src="./assets/images/snowshmock.jpg" class="d-block w-100 " alt="..."
+                            style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="carousel-caption top-0 mt-4">
                             <p class="mt-5 fs-3 text-uppercase">The Best Little Boy You Will See</p>
                             <h1 class="display-1 fw-bolder text-capitalize">Rocky</h1>
                             <button class="btn btn-primary px-4 py-2 fs-5 mt-4">PET HIM</button>
                         </div>
-                </div>
-                <div class="carousel-item" style="width: 100%; height: 100%;">
-                    <img src="./assets/images/mochalandscape.jpg" class="d-block w-100 " alt="..."
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item" style="width: 100%; height: 100%;">
+                        <img src="./assets/images/mochalandscape.jpg" class="d-block w-100 " alt="..."
+                            style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="carousel-caption top-0 mt-4">
                             <p class="mt-5 fs-3 text-uppercase">Come in from the cold</p>
                             <h1 class="display-1 fw-bolder text-capitalize">Hot chocolate</h1>
                             <button class="btn btn-primary px-4 py-2 fs-5 mt-4">DRINK</button>
                         </div>
-                </div>
-                <div class="carousel-item" style="width: 100%; height: 100%;">
-                    <img src="./assets/images/conlielandscap.png" class="d-block w-100 " alt="..."
-                        style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="carousel-item" style="width: 100%; height: 100%;">
+                        <img src="./assets/images/conlielandscap.png" class="d-block w-100 " alt="..."
+                            style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="carousel-caption top-0 mt-4">
                             <p class="mt-5 fs-3 text-uppercase">How about a canoli on the side?</p>
                             <h1 class="display-1 fw-bolder text-capitalize">Enjoy</h1>
                             <button class="btn btn-primary px-4 py-2 fs-5 mt-4">STUFF YOUR FACE</button>
                         </div>
+                    </div>
                 </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button>
         </div>
-    </div>
 
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>

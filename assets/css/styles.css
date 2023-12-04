@@ -4,7 +4,11 @@
 }
 
 body {
-    background-color: var(--peach)
+    /* background-color: var(--peach) */
+    background-image: url('../images/cool-background.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
        
 }
 
@@ -15,8 +19,10 @@ body {
 } 
 
 .hero-title {
-    font-size: 75px;
+    font-size: 85px;
     font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+  
     
 }
 
@@ -24,4 +30,5 @@ body {
     margin-top: 35px;
     font-size: 35px;
     font-family: 'Outfit', sans-serif;
+    font-style: italic;
 }
