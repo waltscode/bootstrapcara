@@ -1,0 +1,27 @@
+:root{
+    --peach: #ffd1b3;
+    --mint-white: #f5fffa; 
+}
+
+body {
+    background-color: var(--peach)
+       
+}
+
+.hero {
+    color: var(--mint-white);
+    
+    
+} 
+
+.hero-title {
+    font-size: 75px;
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+.hero-descrip {
+    margin-top: 35px;
+    font-size: 35px;
+    font-family: 'Outfit', sans-serif;
+}
