@@ -5,12 +5,12 @@
 }
 
 body {
-    background-color: var(--peach)
-    /* background-image: url('../images/cool-background.png');
+    /* background-color: var(--peach) */
+    background-image: url('../images/peach.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-        */
+       
 }
 
 .main-nav {
@@ -74,4 +74,23 @@ padding-bottom: 5px;
     padding-right: 75px;
     padding-top: 5px;
     padding-bottom: 5px;
+    }
+
+    .highlights {
+        padding: 0px;
+        margin: 10px;
+        background-color:rgba(242, 236, 236, 0.5);
+        border-radius: 80px;
+          
+    }
+
+.logo {
+    list-style: none;
+    display: inline-block; 
+}
+
+    .logo > img {
+        height: 100px;
+        width: 140px;
+        
     }
