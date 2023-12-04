@@ -1,6 +1,7 @@
 :root{
     --peach: #ffd1b3;
     --mint-white: #f5fffa; 
+    --dark-grey: darkslategray; 
 }
 
 body {
@@ -12,10 +13,24 @@ body {
         */
 }
 
-.hero {
+.main-nav {
+    margin-bottom: 75px;
+    background-color: salmon;
+    /* padding-bottom: 20px; */
+    justify-content: justify;
+    padding: 20px;
+    border-bottom: 1px solid var(--dark-grey)
+    
+}
+
+.nav-s-btn {
+    background-color: var(--dark-grey);
     color: var(--mint-white);
-    
-    
+    font-family: 'Outfit', sans-serif;
+}
+
+.hero {
+    color: var(--mint-white); 
 } 
 
 .hero-title {
@@ -29,8 +44,34 @@ body {
 
 .hero-descrip {
     margin-top: 35px;
+    margin-bottom: 35px;
     font-size: 35px;
     font-family: 'Outfit', sans-serif;
     font-style: italic;
     color: var(--mint-white);
 }
+
+.hero-button1 {
+background-color: var(--dark-grey);
+color: var(--mint-white);
+font-family:'Outfit', sans-serif;
+font-weight: bold;
+margin: 25px;
+padding-left: 75px;
+padding-right: 75px;
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+.hero-button2 {
+    background-color: var(--dark-grey);
+    color: var(--mint-white);
+    font-family:'Outfit', sans-serif;
+    font-weight: bold;
+    margin: 25px;
+    margin-left: 100px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    }
