@@ -9,6 +9,7 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
@@ -18,7 +19,7 @@
         <div class="row offset-1">
             <div class="col-10 " style="display: flex; align-items: center; justify-content: space-between;">
                 <h1 class="hero">CookNook</h1>
-                <form class="search-bar" role="search">
+                <form class="search-bar" role="search" onsubmit="handleSearch(event)">
                     <input type="search" placeholder="Try Something New!" aria-label="Search">
                     <button type="submit" class="nav-s-btn">Search</button>
                 </form>
@@ -26,19 +27,19 @@
         </div>
     </header>
 
-    <hero class="row offset-1">
-        <div class="col-5">
-            <h1 class="hero-title">Welcome to Cooknook</h1>
+    <hero class="row offset-1 flex-wrap">
+        <div class="col-12 col-md-5 flex-sm-column flex-md-row text-start bubble">
+            <h1 class="hero-title">Welcome to CookNook</h1>
             <p class="hero-descrip">Your new favorite website for finding something new to eat!</p>
             <button class="hero-button1">TEST</button>
             <button class="hero-button2">TEST</button>
         </div>
 
-        <div class="col-5" style="overflow: hidden;">
+        <div class="col-12 col-md-5" style="overflow: hidden;">
             <div id="carouselExample" class="carousel slide" style="width: 100%; height: 100%;">
                 <div class="carousel-inner " style="width: 100%; height: 100%;">
                     <div class="carousel-item active" style="width: 100%; height: 100%;">
-                        <img src="./assets/images/snowshmock.jpg" class="d-block w-100 " alt="..."
+                        <img src="./assets/images/snowshmock.jpg" class="d-block w-100 rounded-5" alt="..."
                             style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="carousel-caption top-0 mt-4">
                             <p class="mt-5 fs-3 text-uppercase">The Best Little Boy You Will See</p>
@@ -47,7 +48,7 @@
                         </div>
                     </div>
                     <div class="carousel-item" style="width: 100%; height: 100%;">
-                        <img src="./assets/images/20231008_174642.jpg" class="d-block w-100 " alt="..."
+                        <img src="./assets/images/20231008_174642.jpg" class="d-block w-100 rounded-5" alt="..."
                             style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="carousel-caption top-0 mt-4">
                             <p class="mt-5 fs-3 text-uppercase">Come in from the cold</p>
@@ -56,7 +57,7 @@
                         </div>
                     </div>
                     <div class="carousel-item" style="width: 100%; height: 100%;">
-                        <img src="./assets/images/planes.jpg" class="d-block w-100 " alt="..."
+                        <img src="./assets/images/planes.jpg" class="d-block w-100 rounded-5" alt="..."
                             style="width: 100%; height: 100%; object-fit: cover;">
                         <div class="carousel-caption top-0 mt-4">
                             <p class="mt-5 fs-3 text-uppercase">How about a canoli on the side?</p>
@@ -80,24 +81,52 @@
 
     </hero>
 
-    <div class="row offset-2">
-        <div class="col-8 highlights d-flex">
-            <ul class="list-unstyled d-flex m-2 p-0">
-                <li class="logo me-2"><img src="./assets/images/menshealthopa.png" alt=""></li>
-                <li class="logo me-2"><img src="./assets/images/forbesopa.png" alt=""></li>
-                <li class="logo me-2"><img src="./assets/images/eatingwellopa.png" alt=""></li>
-                <li class="logo me-2"><img src="./assets/images/amazon-opaque.png" alt=""></li>
-                <li class="logo me-2"><img src="./assets/images/foodnetopa.png" alt=""></li>
-                <li class="logo me-2"><img src="./assets/images/foodandwineopaque.png" alt=""></li>
-                <li class="logo"><img src="./assets/images/NYT.png" alt=""></li>
-            </ul>
+    <div class="container">
+        <div class="row justify-content-center">
+            <h2 class="highlight-txt">Featured On:</h2>
+            <div class="col-10 featured-container highlights">
+                <ul class="list-unstyled d-flex flex-wrap justify-content-between m-0 p-0">
+                    <li class="logo me-2"><img src="./assets/images/logos/menshealthopa.png" alt=""></li>
+                    <li class="logo me-2"><img src="./assets/images/logos/forbesopa.png" alt=""></li>
+                    <li class="logo me-2"><img src="./assets/images/logos/eatingwellopa.png" alt=""></li>
+                    <li class="logo me-2"><img src="./assets/images/logos/amazon-opaque.png" alt=""></li>
+                    <li class="logo me-2"><img src="./assets/images/logos/foodandwineopaque.png" alt=""></li>
+                    <li class="logo me-2"><img src="./assets/images/logos/NYT.png" alt=""></li>
+                    <li class="logo me-1"><img src="./assets/images/logos/foodnetopa.png" alt=""></li>
+                </ul>
+            </div>
         </div>
     </div>
 
+    <div>
+        <div class="row offset-1 flex-wrap second-chunk">
+            <div class="col-12 col-md-5 " style="overflow: hidden;">
+                <img src="./assets/images/rockyfall.jpg" class="d-block w-100 rounded-5" alt="..."
+                    style="width: 100%; height: 100%; object-fit: cover;">
+            </div>
 
+            <div class="col-12 col-md-5 flex-sm-column flex-md-row text-end">
+                <h1 class="hero-title">Popular Dishes</h1>
+                <p class="hero-descrip">Check Out Something New!</p>
+                <button class="hero-button1">Button 1</button>
+                <button class="hero-button2">Button 2</button>
+            </div>
+        </div>
+    </div>
+
+<div class="cuisine-choices">
+    
+</div>
+
+    <div class="card-container">
+
+    </div>
+
+   
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
     <script src="./assets/js/styles.js"></script>
 </body>
 

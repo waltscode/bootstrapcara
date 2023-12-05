@@ -1,7 +1,7 @@
-:root{
+:root {
     --peach: #ffd1b3;
-    --mint-white: #f5fffa; 
-    --dark-grey: darkslategray; 
+    --mint-white: #f5fffa;
+    --dark-grey: darkslategray;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
-       
+
 }
 
 .main-nav {
@@ -20,7 +20,6 @@ body {
     justify-content: justify;
     padding: 20px;
     border-bottom: 1px solid var(--dark-grey)
-    
 }
 
 .nav-s-btn {
@@ -30,16 +29,16 @@ body {
 }
 
 .hero {
-    color: var(--mint-white); 
-} 
+    color: var(--mint-white);
+}
 
 .hero-title {
     font-size: 85px;
     font-family: 'Outfit', sans-serif;
     font-weight: bold;
     color: var(--mint-white);
-  
-    
+
+
 }
 
 .hero-descrip {
@@ -52,21 +51,21 @@ body {
 }
 
 .hero-button1 {
-background-color: var(--dark-grey);
-color: var(--mint-white);
-font-family:'Outfit', sans-serif;
-font-weight: bold;
-margin: 25px;
-padding-left: 75px;
-padding-right: 75px;
-padding-top: 5px;
-padding-bottom: 5px;
+    background-color: var(--dark-grey);
+    color: var(--mint-white);
+    font-family: 'Outfit', sans-serif;
+    font-weight: bold;
+    margin: 25px;
+    padding-left: 75px;
+    padding-right: 75px;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 
 .hero-button2 {
     background-color: var(--dark-grey);
     color: var(--mint-white);
-    font-family:'Outfit', sans-serif;
+    font-family: 'Outfit', sans-serif;
     font-weight: bold;
     margin: 25px;
     margin-left: 100px;
@@ -74,23 +73,69 @@ padding-bottom: 5px;
     padding-right: 75px;
     padding-top: 5px;
     padding-bottom: 5px;
-    }
+}
 
-    .highlights {
-        padding: 0px;
-        margin: 10px;
-        background-color:rgba(242, 236, 236, 0.5);
-        border-radius: 80px;
-          
-    }
+.highlights {
+    padding: 10px;
+    margin: 10px;
+    background-color: rgba(242, 236, 236, 0.5);
+    border-radius: 80px;
+
+}
+
+.highlight-txt {
+    margin-top: 30px;
+    align-items: center;
+    text-align: left;
+    color: var(--mint-white);
+    font-family: 'Outfit', sans-serif;
+}
 
 .logo {
     list-style: none;
-    display: inline-block; 
+    display: inline-block;
 }
 
-    .logo > img {
-        height: 100px;
-        width: 140px;
-        
-    }
+.logo>img {
+    height: 100px;
+    width: 140px;
+
+}
+
+.second-chunk {
+    margin-top: 80px;
+}
+
+.bubble {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .bubble::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #3498db; /* Set your desired color here */
+    border-radius: 20%;
+    z-index: -1;
+    transform: scale(0);
+    transform-origin: top left; /* Adjusted origin to top left corner */
+    transition: transform 2s ease;
+  }
+  
+  .bubble:hover::before {
+    transform: scale(1);
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  .card {
+    width: 18rem;
+  }
